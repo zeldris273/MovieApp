@@ -42,7 +42,7 @@ const BannerHome = () => {
                 {
                     bannerData.map((data, index) => {
                         return (
-                            <div className='min-w-full min-h-[450px] lg:min-h-full overflow-hidden relative transition-all' style={{ transform: `translateX(-${currentImage * 100}%)` }}>
+                            <div key={data.id+"bannerHome"+index} className='min-w-full min-h-[450px] lg:min-h-full overflow-hidden relative transition-all' style={{ transform: `translateX(-${currentImage * 100}%)` }}>
                                 <div className='w-full h-full'>
                                     <img
                                         src={imageURL + data.backdrop_path}
