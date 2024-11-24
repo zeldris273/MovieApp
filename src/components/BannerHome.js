@@ -66,7 +66,7 @@ const BannerHome = () => {
                                 <div className='container mx-auto'>
                                     <div className='w-full absolute bottom-0 max-w-md px-3'>
                                         <h2 className='font-bold text-2xl lg:text-4xl text-white drop-shadow-2xl'>
-                                            {data.name ? data.name : data.title}
+                                            {data?.name || data?.title}
                                         </h2>
                                         <p className='text-ellipsis line-clamp-3 my-2'>{data.overview}</p>
                                         <div className='flex items-center gap-4'>
