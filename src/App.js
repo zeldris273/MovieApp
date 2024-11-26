@@ -40,7 +40,7 @@ function App() {
   return (
     <main className='pb-14 lg:bg-0'>
       <Header />
-      <div className=''>
+      <div className='min-h-[90vh]'>
         <Outlet />
       </div>
       <Footer />
