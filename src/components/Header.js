@@ -63,7 +63,7 @@ const Header = () => {
                             onChange={(e) => setSearchInput(e.target.value)}
                             value={searchInput}
                         />
-                        <button className='text-2xl text-white'>
+                        <button className='text-2xl hidden lg:block text-white'>
                             <IoSearchOutline />
                         </button>
                     </form>
